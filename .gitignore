@@ -1,3 +1,9 @@
+#build
+*.project
+Default/*
+build/*
+third_party/v8
+
 # VC
 *.sdf
 *.sln
