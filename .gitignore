@@ -1,3 +1,16 @@
+# VC
+*.sdf
+*.sln
+*.suo
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# complied objects
+*.exe
+*.dll
+*.lib
+
 # Compiled Object files
 *.slo
 *.lo
