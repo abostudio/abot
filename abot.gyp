@@ -26,13 +26,24 @@
 
       'include_dirs': [
         'third_party/v8/',
-        'modules/foundation',
+        'modules/foundation/',
+        'include/',
       ],
 
       'sources': [
-        'third_party/v8/include/v8.h',
-        'third_party/v8/include/v8-debug.h',
-        'modules/foundation/foundation.cpp',
+        'include/abot/foundation.h',
+		
+        'modules/foundation/FoundationCommon.h',
+
+        'modules/foundation/Component.h',
+        'modules/foundation/Container.h',
+
+        'modules/foundation/Group.h',
+        'modules/foundation/Group.cpp',
+        'modules/foundation/Node.h',
+        'modules/foundation/Node.cpp',
+        'modules/foundation/SignalSlot.h',
+        'modules/foundation/Foundation.cpp',
       ],
 
       'defines': [
