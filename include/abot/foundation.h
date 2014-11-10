@@ -11,10 +11,17 @@
 #include <direct.h>
 #include <inttypes.h>
 
-#include <cstddef>
-#include <ctime>
+#include <cmath>
 #include <cstring>
-#include <string>
+#include <climits>
+#include <cfloat>
+#include <cassert>
+#include <ctime>
+#include <cstddef>
+#include <cstring>
+#include <cstdio>
+#include <cstdlib>
+
 #include <memory>
 #include <string>
 #include <iostream>
@@ -26,33 +33,21 @@
 #include <fstream>
 #include <exception>
 #include <algorithm>  
-
 #include <array>
-#include <cmath>
-#include <cstring>
-#include <exception>
 #include <functional>
-#include <iostream>
 #include <list>
 #include <forward_list>
-#include <map>
 #include <memory>
 #include <queue>
 #include <set>
 #include <sstream>
 #include <fstream>
 #include <stdexcept>
-#include <string>
 #include <unordered_map>
 #include <unordered_set>
 #include <vector>
-#include <cassert>
-#include <ctime>
 #include <type_traits>
-#include <cfloat>
-#include <climits>
 #include <future>
-#include <thread>
 #include <chrono>
 
 

@@ -1,16 +1,19 @@
 {
   #
   'variables': {
-
     'library_files': [
     ],
   },
   'defines': [
+    #'target_arch=ia32',
+	#'host_arch': 'ia32',
+	#'clang=0',
   ],
   'includes': [
   ],
   'target_defaults': {
     'defines': [
+	  #'clang=0',
     ],
     'variables': {
     },
@@ -149,20 +152,36 @@
 
       'variables': {
       },
-
+	  'defines':[
+        #'target_arch=ia32',
+		#'clang=0',
+	  ],
       'dependencies': [
         #'js2c',
         'third_party/v8/tools/gyp/v8.gyp:v8',
         'third_party/v8/tools/gyp/v8.gyp:v8_libplatform'
       ],
 
+      'direct_dependent_settings': {
+        'defines': [
+          #'clang=0',
+        ],
+      },
+      'export_dependent_settings': [
+          #'third_party/v8/tools/gyp/v8.gyp:v8',
+          #'third_party/v8/tools/gyp/v8.gyp:v8_libplatform'
+      ],      
+
       'include_dirs': [
         'third_party/v8/',
         'modules/foundation/',
         'include/',
+        'third_party/dlib/',
       ],
 
       'sources': [
+        'third_party/dlib/dlib/all/source.cpp',
+
         'include/abot/foundation.h',
         
         'modules/foundation/FoundationCommon.h',
