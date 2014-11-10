@@ -1,8 +1,13 @@
 #build
 *.project
 Default/*
+Debug/*
 build/*
 third_party/v8
+third_party/dlib
+third_party/node
+third_party/skia
+third_party/skiacommon
 
 # VC
 *.sdf
